@@ -4,5 +4,3 @@
 .tmp_*
 node_modules
 coverage
-underscore.string.js
-underscore.string.min.js
