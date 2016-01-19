@@ -70,7 +70,7 @@ s("   epeli  ").trim().capitalize().value();
 
 ### Others
 
-The `dist/underscore.string.js` file is an [UMD][] build. You can load it using
+The `underscore.string.js` file is an [UMD][] build. You can load it using
 an AMD loader such as [RequireJS][] or just stick it to a web page and access
 the library from the ***s*** global.
 
@@ -107,9 +107,9 @@ filter(S.startsWith('.'), [
 ```
 
 ## Download
-
-  * [Development version](https://raw.github.com/epeli/underscore.string/master/dist/underscore.string.js) *Uncompressed with Comments*
-  * [Production version](https://github.com/epeli/underscore.string/raw/master/dist/underscore.string.min.js) *Minified*
+  
+  * [Development version](https://npmcdn.com/underscore.string@3.2.2/underscore.string.js) *Uncompressed with Comments*
+  * [Production version](https://npmcdn.com/underscore.string@3.2.2/underscore.string.min.js) *Minified*
 
 ## API
 
