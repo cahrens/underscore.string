@@ -100,7 +100,7 @@ s.prototype = {
 };
 
 function fn2method(key, fn) {
-  if (typeof fn !== "function") return;
+  if (typeof fn !== 'function') return;
   s.prototype[key] = function() {
     var args = [this._wrapped].concat(Array.prototype.slice.call(arguments));
     var res = fn.apply(null, args);
@@ -112,7 +112,7 @@ function fn2method(key, fn) {
 // Copy functions to instance methods for chaining
 for (var key in s) fn2method(key, s[key]);
 
-fn2method("tap", function tap(string, fn) {
+fn2method('tap', function tap(string, fn) {
   return fn(string);
 });
 
@@ -124,14 +124,14 @@ function prototype2method(methodName) {
 }
 
 var prototypeMethods = [
-    "toUpperCase",
-    "toLowerCase",
-    "split",
-    "replace",
-    "slice",
-    "substring",
-    "substr",
-    "concat"
+  'toUpperCase',
+  'toLowerCase',
+  'split',
+  'replace',
+  'slice',
+  'substring',
+  'substr',
+  'concat'
 ];
 
 for (var method in prototypeMethods) prototype2method(prototypeMethods[method]);

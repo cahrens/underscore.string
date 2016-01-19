@@ -7,7 +7,7 @@ test('#quote', function(){
   equal(quote('foo'), '"foo"');
   equal(quote('"foo"'), '""foo""');
   equal(quote(1), '"1"');
-  equal(quote("foo", "'"), "'foo'");
+  equal(quote('foo', '\''), '\'foo\'');
 
   // alias
   equal(q('foo'), '"foo"');
