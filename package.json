@@ -41,7 +41,7 @@
     "build": "npm run build:bundle && npm run build:min",
     "build:bundle": "browserify index.js -o underscore.string.js -p browserify-header",
     "build:min": "uglifyjs underscore.string.js -o underscore.string.min.js --comments",
-    "release": "npm test && npm run build && npm run release:version && npm publish && npm run release:push",
+    "release": "npm test && npm run build && npm run release:version && npm run release:push && npm publish",
     "release:version": "node scripts/bump-version.js",
     "release:push": "node scripts/push-tags.js"
   },
