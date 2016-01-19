@@ -43,7 +43,7 @@
     "build:min": "uglifyjs underscore.string.js -o underscore.string.min.js --comments",
     "release": "npm test && npm run build && npm run release:version && npm publish && npm run release:push",
     "release:version": "node scripts/bump-version.js",
-    "release:push": "git push && git push --tags"
+    "release:push": "node scripts/push-tags.js"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
