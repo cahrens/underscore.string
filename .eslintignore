@@ -2,7 +2,8 @@
 gulpfile.js
 meteor-*.js
 package.js
-dist/**
+underscore.string.js
+underscore.string.min.js
 scripts/**
 coverage/**
 node_modules/**
