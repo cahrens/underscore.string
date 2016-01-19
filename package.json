@@ -34,8 +34,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "gulp test",
-    "test:lint": "eslint -c .eslintrc ."
+    "test": "npm run test:lint && npm run test:unit && npm run coverage",
+    "test:unit": "mocha --ui=qunit tests",
+    "test:lint": "eslint -c .eslintrc .",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha  -- --report=lcov --ui=qunit tests"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
@@ -52,7 +54,9 @@
     "gulp-replace": "~0.5.0",
     "gulp-rimraf": "^0.1.1",
     "gulp-uglify": "~1.0.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "^1.0.0",
     "underscore": "^1.7.0"
   },
   "jshintConfig": {

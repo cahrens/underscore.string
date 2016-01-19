@@ -1,4 +1,4 @@
-var s = require('../dist/underscore.string');
+var s = require('../');
 var equal = require('assert').equal;
 var deepEqual = require('assert').deepEqual;
 var strictEqual = require('assert').strictEqual;

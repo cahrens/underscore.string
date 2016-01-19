@@ -1,6 +1,6 @@
 var equal = require('assert').equal;
 var quote = require('../quote');
-var q = require('../dist/underscore.string').q;
+var q = require('../').q;
 
 
 test('#quote', function(){
