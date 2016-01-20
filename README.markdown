@@ -108,8 +108,8 @@ filter(S.startsWith('.'), [
 
 ## Download
   
-  * [Development version](https://npmcdn.com/underscore.string@3.2.2/underscore.string.js) *Uncompressed with Comments*
-  * [Production version](https://npmcdn.com/underscore.string@3.2.2/underscore.string.min.js) *Minified*
+  * [Development version](https://npmcdn.com/underscore.string@3.2.2/dist/underscore.string.js) *Uncompressed with Comments*
+  * [Production version](https://npmcdn.com/underscore.string@3.2.2/dist/underscore.string.min.js) *Minified*
 
 ## API
 
